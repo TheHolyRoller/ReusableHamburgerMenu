@@ -1,3 +1,38 @@
+/* 
+
+Okay so the'ts work out what is going on here 
+
+The good news is that for the most part I've made the most difficult bits of the 
+slide menu. There just need to be a lot of polishing and styling. 
+
+Then there is some more good news I have the Hamburger menu icon and the functionality for the 
+
+Drop Down many. This should work better than the pure CSS one because it uses Javascript 
+and not just pure CSS. 
+
+Okay that's great. 
+
+The only thing that remains now is to test the Hamburger menu. Finish styling and positioning it 
+so it can be reusable and responsive. 
+
+
+Then the dropdown menu will need polishing and styling. 
+
+Once that is done then it's the wireframes and the layout planning. 
+
+Once that is all done. If there is time then it will be the fully reusable and responsive 
+Navbar with all the functionality and levels. 
+
+Then if that is done then that will have been a good day's work. 
+
+
+
+
+*/
+
+
+
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -10,12 +45,16 @@ nav {
     background-color: rgb(37, 39, 53);
     display: flex;
     justify-content: flex-start;
-    padding: 1em;
+    padding: 1.7rem;
 }
 
+
+
+
+/* ICON CONTAINER  */
 .burger-menu {
     height: 100%;
-    width: 4em;
+    width: 1rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -23,13 +62,15 @@ nav {
     cursor: pointer;
 }
 
+/* BLUE ICON BARS  */
 .burger-bar {
-    width: 4em;
-    height: 0.5em;
+    width: 2.5em;
+    height: 0.3rem;
     background-color: rgb(0, 183, 255);
     border-radius: 0.5em;
 }
 
+/* SLIDE IN MENU */
 .menu {
     width: 50%;
     height: 100vh;
@@ -50,9 +91,15 @@ nav {
 
 /* ----- animations--------- */
 /* clicked */
+
+
+/* Adjust these because they are now broken  */
 .burger-bar.clicked:nth-child(1){
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    /* transform: rotate(45deg) translate(0.75em, 1.25em);
+    transition: ease-out 0.5s; */
+    transform: rotate(45deg) translate(0.01rem, 1.25em);
     transition: ease-out 0.5s;
+    
 }
 
 .burger-bar.clicked:nth-child(2){
@@ -61,7 +108,10 @@ nav {
 }
 
 .burger-bar.clicked:nth-child(3){
-    transform: rotate(135deg) translate(-0.5em, 1em);
+    /* transform: rotate(135deg) translate(-0.5em, 1em);
+    transition: ease-out 0.5s; */
+    
+    transform: rotate(135deg) translate(0.3rem, 1em);
     transition: ease-out 0.5s;
 }
 

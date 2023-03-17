@@ -1,0 +1,112 @@
+@import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+
+/* Define some variables for colors */
+:root {
+  --primary-color: hsl(80, 90%, 40%);
+  --secondary-color: hsl(80, 90%, 60%);
+  --tertiary-color: hsl(80, 90%, 20%);
+}
+
+/* Style the hamburger icon */
+.bm-burger-button {
+  position: fixed;
+  width: 36px;
+  height: 30px;
+  right: 36px;
+  top: 36px;
+}
+
+.bm-burger-bars {
+  background: var(--primary-color);
+}
+
+.bm-burger-bars-hover {
+  background: var(--secondary-color);
+}
+
+/* Style the cross icon */
+.bm-cross-button {
+  height: 24px;
+}
+
+.bm-cross {
+    background: white;
+    height: auto !important; /* override default height */
+    width: auto !important; /* override default width */
+}
+
+/* Style the sidebar component */
+.bm-menu-wrap {
+    position: fixed;
+    height: auto !important; /* override default height */
+    width:auto !important; /* override default width */
+}
+
+.bm-menu {
+    background-image:
+      linear-gradient(to bottom right,
+        var(--primary-color),
+        var(--tertiary-color));
+    color:white;
+    padding-top:10%;
+}
+
+.bm-morph-shape { 
+    fill:#373a47; 
+}
+
+.bm-item-list {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Style each menu item with icons and hover effects */
+
+.menu-logo {
+   width:auto !important; /* override default width */ 
+   max-width:none !important; /* override default max-width */ 
+   margin-bottom:auto !important; /* override default margin-bottom */ 
+   margin-top:auto !important; /* override default margin-top */ 
+   transition:.3s ease-in-out transform; /* add transition effect */ 
+ }
+
+.menu-logo:hover{
+   transform : scale(1.2); /* add scale effect on hover */ 
+ }
+
+.menu-item{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   font-size :20px ;
+   text-decoration:none ;
+   color:white ;
+   transition:.3s ease-in-out transform ; /* add transition effect */ 
+ }
+
+.menu-item i{
+     margin-right :10px ;  
+     font-size :24px ;  
+ }
+
+.menu-item:hover{
+     transform : translateX(10%); /* add translate effect on hover */  
+ }
+
+ .menu-button{
+     border:none ;
+     outline:none ;
+     cursor:pointer ;
+     padding :10px ;  
+     border-radius :5px ;  
+     background:white ;  
+     color:black ;  
+     font-weight:bold ;  
+     transition:.3s ease-in-out transform box-shadow ; /* add transition effect */   
+ }
+
+ .menu-button:hover{
+      transform : scale(1.05); /* add scale effect on hover */   
+      box-shadow :0px -5px -5px rgba(0 ,0 ,0 ,0.4) inset ,0px -5px -5px rgba(255 ,255 ,255 ,0.4) inset ;   
+ }
